@@ -1,8 +1,9 @@
 package com.example;
 
+
 import java.util.List;
 
-public class Cat {
+public class Cat implements Predator{
 
     Predator predator;
 
@@ -10,12 +11,25 @@ public class Cat {
         this.predator = feline;
     }
 
-    public String getSound() {
-        return "Мяу";
+    @Override
+    public List<String> eatMeat() throws Exception {
+        return null;
     }
 
-    public List<String> getFood() throws Exception {
-        return predator.eatMeat();
+    @Override
+    public int getKittens() {
+
+        return getKittens(1);
+    }
+
+    @Override
+    public int getKittens(int kittensCount){
+
+        return kittensCount;
+    }
+
+    public String getSound() {
+        return "Мяу";
     }
 
 }
