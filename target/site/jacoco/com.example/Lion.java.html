@@ -2,7 +2,7 @@
 
 import java.util.List;
 
-public class Lion extends Animal implements Predator {
+public class Lion {
 
     boolean hasMane;
 
@@ -16,35 +16,29 @@ public class Lion extends Animal implements Predator {
         }
 <span class="fc" id="L17">    }</span>
     Predator predator;
-<span class="nc" id="L19">    public Lion(Feline feline){</span>
 
-<span class="nc" id="L21">        this.predator = feline;</span>
-<span class="nc" id="L22">    }</span>
+<span class="fc" id="L20">    public Lion(Feline feline){</span>
 
-    @Override
-    public List&lt;String&gt; eatMeat() throws Exception {
-<span class="nc" id="L26">        return null;</span>
-    }
+<span class="fc" id="L22">        this.predator = feline;</span>
+<span class="fc" id="L23">    }</span>
 
-    @Override
     public int getKittens() {
 
-<span class="fc" id="L32">        return getKittens(1);</span>
+<span class="nc" id="L27">        return predator.getKittens(1);</span>
     }
 
-    @Override
     public int getKittens(int kittensCount){
 
-<span class="fc" id="L38">        return kittensCount;</span>
+<span class="fc" id="L32">        return kittensCount;</span>
     }
 
     public boolean doesHaveMane() {
 
-<span class="fc" id="L43">        return hasMane;</span>
+<span class="fc" id="L37">        return hasMane;</span>
     }
 
     public List&lt;String&gt; getFood() throws Exception {
-<span class="fc" id="L47">        return getFood(&quot;Хищник&quot;);</span>
+<span class="fc" id="L41">        return predator.eatMeat();</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
