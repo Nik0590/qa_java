@@ -28,17 +28,9 @@ public class CatTest {
     @Test
     public void shouldGetFood() throws Exception {
         Cat cat = new Cat(feline);
-        Mockito.when(feline.getFood("Хищник")).thenReturn(List.of("Животные", "Птицы", "Рыба"));
-        List<String> actual = feline.getFood("Хищник");
+        Mockito.when(cat.getFood()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
+        List<String> actual = cat.getFood();
         List<String> expected = List.of("Животные", "Птицы", "Рыба");
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void  catGetKittens() {
-        Cat cat = new Cat(feline);
-        Integer actual = cat.getKittens();
-        Integer expected = 1;
         assertEquals(expected, actual);
     }
 }
