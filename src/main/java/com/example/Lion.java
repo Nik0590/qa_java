@@ -1,7 +1,7 @@
 package com.example;
 
 import java.util.List;
-
+//класс Lion
 public class Lion {
 
     boolean hasMane;
