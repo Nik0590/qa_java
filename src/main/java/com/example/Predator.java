@@ -1,7 +1,7 @@
 package com.example;
 
 import java.util.List;
-
+//интерфейс
 public interface Predator {
 
 

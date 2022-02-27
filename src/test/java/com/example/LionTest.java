@@ -9,7 +9,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 import org.junit.runner.RunWith;
-
+//класс
 @RunWith(MockitoJUnitRunner.class)
 public class LionTest {
 

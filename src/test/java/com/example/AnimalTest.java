@@ -7,7 +7,7 @@ import org.junit.rules.ExpectedException;
 import java.util.List;
 
 import static org.junit.Assert.*;
-
+//класс
 public class AnimalTest {
 
     @Rule

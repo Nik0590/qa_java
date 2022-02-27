@@ -2,7 +2,7 @@ package com.example;
 
 
 import java.util.List;
-
+//класс
 public class Cat{
 
     Predator predator;

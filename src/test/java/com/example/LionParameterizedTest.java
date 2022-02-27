@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 
-
+//класс
 public class LionParameterizedTest {
 
     // поля класса:
