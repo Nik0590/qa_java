@@ -23,7 +23,7 @@ public class LionTest {
     @Test
     public void shouldGetKittens() throws Exception {
         int kittensCount = 1;
-        Lion lion = new Lion(feline);
+        Lion lion = new Lion("Самец", feline);
         int actual = lion.getKittens(kittensCount);
         int expected = 1;
         assertEquals(expected, actual);
@@ -31,7 +31,7 @@ public class LionTest {
 
     @Test
     public void shouldGetFood() throws Exception{
-        Lion lion = new Lion(feline);
+        Lion lion = new Lion("Самка", feline);
         Mockito.when(lion.getFood()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
         List<String> actual = lion.getFood();
         List<String> expected = List.of("Животные", "Птицы", "Рыба");
@@ -42,7 +42,7 @@ public class LionTest {
     public void doesNotHaveMane() throws Exception {
         exeptionRule.expect(Exception.class);
         exeptionRule.expectMessage("Используйте допустимые значения пола животного - самец или самка");
-        Lion lion = new Lion("sdf");
+        Lion lion = new Lion("sdf", feline);
         boolean expected = true;
         boolean actual = lion.doesHaveMane();
         assertEquals(expected, actual);
