@@ -1,12 +1,17 @@
 package com.example;
 
 import java.util.List;
-//класс Lion
-public class Lion {
+
+
+public class Lion{
+
 
     boolean hasMane;
 
-    public Lion(String sex) throws Exception {
+    Feline feline;
+
+    public Lion(String sex, Feline feline) throws Exception {
+        this.feline = feline;
         if ("Самец".equals(sex)) {
             hasMane = true;
         } else if ("Самка".equals(sex)) {
@@ -15,16 +20,10 @@ public class Lion {
             throw new Exception("Используйте допустимые значения пола животного - самец или самка");
         }
     }
-    Predator predator;
-
-    public Lion(Feline feline){
-
-        this.predator = feline;
-    }
 
     public int getKittens() {
 
-        return predator.getKittens(1);
+        return feline.getKittens(1);
     }
 
     public int getKittens(int kittensCount){
@@ -38,6 +37,6 @@ public class Lion {
     }
 
     public List<String> getFood() throws Exception {
-        return predator.eatMeat();
+        return feline.getFood("Хищник");
     }
 }
