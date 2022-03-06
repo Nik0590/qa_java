@@ -1,7 +1,10 @@
 package com.example;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 
 
 import static org.junit.Assert.assertEquals;
@@ -9,6 +12,12 @@ import static org.junit.Assert.assertEquals;
 @RunWith(Parameterized.class)
 
 public class LionParameterizedTest {
+    @Before
+    public void init() {
+        MockitoAnnotations.initMocks(this);
+    }
+    @Mock
+    Feline feline;
     private final String checkedSex; // текст, который передаётся в метод
     private final Boolean expected; // ожидаемый результат
 
@@ -26,10 +35,10 @@ public class LionParameterizedTest {
         };
     }
 
-   /* @Test
+   @Test
     public void shouldDoesHaveMane() throws Exception {
-        Lion lion = new Lion(checkedSex);
+        Lion lion = new Lion(checkedSex, feline);
         boolean actual = lion.doesHaveMane();
         assertEquals(expected, actual);
-    }*/
+    }
 }

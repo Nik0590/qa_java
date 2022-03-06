@@ -19,13 +19,6 @@ public class LionTest {
 
     public ExpectedException exeptionRule = ExpectedException.none();
 
-   /*@Test
-    public void shouldGetKittens() throws Exception {
-        Lion lion = new Lion("Самец", feline);
-        int actual = lion.getKittens(1);
-        int expected = 1;
-        assertEquals(expected, actual);
-    }*/
 
     @Test
     public void shouldGetFood() throws Exception{
