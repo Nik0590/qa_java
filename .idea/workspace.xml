@@ -5,24 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a14a24d-a000-467e-aed5-b690b1d038dd" name="Changes" comment="add LionParameterizedTest">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Feline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Feline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Predator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Predator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/AnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/AnimalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/CatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/CatTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/LionParameterizedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/LionParameterizedTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/LionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/LionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example/Feline.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example/Feline.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example/Feline.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example/Feline.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.AnimalTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.AnimalTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.CatTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.CatTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.FelineTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.FelineTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.LionParameterizedTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.LionParameterizedTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.LionTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.LionTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.AnimalTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.AnimalTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.CatTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.CatTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.FelineTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.FelineTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.LionParameterizedTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.LionParameterizedTest.txt" afterDir="false" />
@@ -99,8 +91,8 @@
       <command value="mvn verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CatTest">
-    <configuration name="CatTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LionParameterizedTest">
+    <configuration name="FelineTest.getKittens" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
@@ -109,29 +101,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example" />
-      <option name="MAIN_CLASS_NAME" value="com.example.CatTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CatTest.shouldGetFood" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example" />
-      <option name="MAIN_CLASS_NAME" value="com.example.CatTest" />
-      <option name="METHOD_NAME" value="shouldGetFood" />
+      <option name="MAIN_CLASS_NAME" value="com.example.FelineTest" />
+      <option name="METHOD_NAME" value="getKittens" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CatTest.shouldGetSound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LionParameterizedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
@@ -140,8 +117,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example" />
-      <option name="MAIN_CLASS_NAME" value="com.example.CatTest" />
-      <option name="METHOD_NAME" value="shouldGetSound" />
+      <option name="MAIN_CLASS_NAME" value="com.example.LionParameterizedTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LionParameterizedTest.shouldDoesHaveMane" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example" />
+      <option name="MAIN_CLASS_NAME" value="com.example.LionParameterizedTest" />
+      <option name="METHOD_NAME" value="shouldDoesHaveMane" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -162,7 +154,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LionTest.shouldGetFood" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LionTest.shouldGetKittens" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
@@ -172,7 +164,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example" />
       <option name="MAIN_CLASS_NAME" value="com.example.LionTest" />
-      <option name="METHOD_NAME" value="shouldGetFood" />
+      <option name="METHOD_NAME" value="shouldGetKittens" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -191,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CatTest" />
+        <item itemvalue="JUnit.LionParameterizedTest" />
         <item itemvalue="JUnit.LionTest" />
-        <item itemvalue="JUnit.CatTest.shouldGetFood" />
-        <item itemvalue="JUnit.CatTest.shouldGetSound" />
-        <item itemvalue="JUnit.LionTest.shouldGetFood" />
+        <item itemvalue="JUnit.LionTest.shouldGetKittens" />
+        <item itemvalue="JUnit.LionParameterizedTest.shouldDoesHaveMane" />
+        <item itemvalue="JUnit.FelineTest.getKittens" />
       </list>
     </recent_temporary>
   </component>
@@ -257,20 +249,20 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/example/LionTest.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="14" />
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/AnimalTest.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/example/CatTest.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/LionTest.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="../../../../qa_java/target/jacoco.exec" NAME="jacoco.exec" MODIFIED="1643963626769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="../../../../qa_java/target/jacoco.exec" NAME="jacoco.exec" MODIFIED="1647159706218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="../../../../qa_java/target/jacoco.exec" NAME="jacoco.exec" MODIFIED="1646550532746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
