@@ -1,15 +1,10 @@
 package com.example;
-import org.junit.Rule;
+import org.junit.Assert;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
-
 import java.util.List;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class AnimalTest {
-    @Rule
-
-    public ExpectedException exeptionRule = ExpectedException.none();
 
     @Test
 
@@ -24,12 +19,14 @@ public class AnimalTest {
     @Test
 
     public void unknownAnimalGetFood() throws Exception{
-        exeptionRule.expect(Exception.class);
-        exeptionRule.expectMessage("Неизвестный вид животного, используйте значение Травоядное или Хищник");
-        Animal animal = new Animal();
-        boolean expected = true;
-        boolean actual = Boolean.parseBoolean(String.valueOf(animal.getFood("Комарик")));
-        assertEquals(expected, actual);
+        try {
+            Animal animal = new Animal();
+            animal.getFood("Комарик");
+            Assert.fail("Expected IOException");
+        } catch (Exception ex) {
+            Assert.assertEquals("Неизвестный вид животного, используйте значение Травоядное или Хищник", ex.getMessage());
+            Assert.assertNotEquals("", ex.getMessage());
+        }
     }
 
     @Test

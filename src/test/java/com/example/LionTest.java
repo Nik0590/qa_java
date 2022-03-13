@@ -1,41 +1,37 @@
 package com.example;
 
-import org.junit.Rule;
+import org.junit.Assert;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.junit.MockitoJUnitRunner;
 import java.util.List;
 import static org.junit.Assert.assertEquals;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.junit.MockitoJUnitRunner;
-import org.junit.runner.RunWith;
+
 //класс
 @RunWith(MockitoJUnitRunner.class)
 public class LionTest {
     @Mock
     Feline feline;
 
-    @Rule
-
-    public ExpectedException exeptionRule = ExpectedException.none();
-
 
     @Test
     public void shouldGetFood() throws Exception{
         Lion lion = new Lion("Самка", feline);
-        Mockito.when(lion.getFood()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
         List<String> actual = lion.getFood();
-        List<String> expected = List.of("Животные", "Птицы", "Рыба");
+        List<String> expected = feline.getFood("Хищник");
         assertEquals(expected, actual);
     }
 
     @Test
     public void doesNotHaveMane() throws Exception {
-        exeptionRule.expect(Exception.class);
-        exeptionRule.expectMessage("Используйте допустимые значения пола животного - самец или самка");
-        Lion lion = new Lion("sdf", feline);
-        boolean expected = true;
-        boolean actual = lion.doesHaveMane();
-        assertEquals(expected, actual);
+        try {
+            Lion lion = new Lion("sdf", feline);
+            lion.doesHaveMane();
+            Assert.fail("Expected IOException");
+        } catch (Exception ex) {
+            Assert.assertEquals("Используйте допустимые значения пола животного - самец или самка", ex.getMessage());
+            Assert.assertNotEquals("", ex.getMessage());
+        }
     }
 }
